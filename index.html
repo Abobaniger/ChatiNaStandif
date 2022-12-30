@@ -4,602 +4,268 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title</title>
+  <title>Vzlom jopi</title>
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;600&display=swap");
-
-*,
-*::after,
-*::before {
-	margin:  0;
-	width: 90%;
-	padding: 1;
+    .button {
+  float:right;
+  margin:10px;
+  padding:8px 16px;
+   font-family: 'Anton', sans-serif;
+   font-size:65px;
+   color: red;
+}
+.logo
+{
+  float:left;
+  font-family: 'Bangers', cursive;
+  font-size:90px;
+  
+}
+.logo:hover{
+  text-decoration:none;
+  background-color:black;
+  color:#fa1616;
 }
 
-p {
-	font-weight: 400;
-	font-size: 0.7rem;
-	color: rgba(255, 255, 255, 0.5);
+
+ul{
+list-style-type:none;
+  margin:0px;
+  padding:0px;
+  background-color:black;
+  overflow:hidden;
+  color:#fa1616;
+  
 }
 
-h4 {
-	font-size: 0.9rem;
-	margin-bottom: 5px;
-	color: rgba(255, 255, 255, 0.8);
+h1{
+  color:white;
 }
 
-body {
-	background-color: #8287a0;
-	padding: 30px 0;
-	min-height: 100vh;
-	overflow-x: hidden;
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-family: "Urbanist", sans-serif;
-	letter-spacing: 0.07em;
+.slideshow{
+  background-color:black;
+  width:100%;
+  height:600px;
+  overflow:hidden;
+  
 }
 
-.container {
-	background-color: #1a1b1f;
-	height: 90%;
-	min-height: 700px;
-	max-height: 750px;
-	overflow: hidden;
-	width: 90%;
-	max-width: 1400px;
-	border-radius: 20px;
-	display: flex;
-	box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
-	position: relative;
+
+
+li:hover{
+  background-color:#fa1616;
+  color:black;
+  text-decoration:underline; 
 }
 
-/* -------------------------navbar-------------------------- */
-
-nav {
-	width: 80px;
-	border-right: 2px solid #3a3c47;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 30px 20px;
-	color: white;
-	position: relative;
+body{
+background-color:black;
 }
 
-.logo {
-	position: absolute;
-	top: 50px;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.slideimg{
+  height:600px;
+  width:100%
 }
 
-nav ul {
-	list-style: none;
+.card{
+  background-color:black;
+  color:white;
 }
 
-nav ul li {
-	padding: 10px;
-	margin: 30px;
-	border-radius: 10px;
-	cursor: pointer;
+.card-img-top{
+  height:10rem;
+  border:1px solid #fa1616;
 }
 
-nav ul i {
-	color: rgba(255, 255, 255, 0.5);
+.gl ,.gm{
+  color:#fa1616;
+  text-align:center;
+  height:100px;
 }
 
-nav ul li:hover,
-nav li.active {
-	background-color: #3482e7;
-}
-nav ul li:hover i,
-nav li.active i {
-	color: white;
+.price-gl{
+  color:#fa1616;
+  
 }
 
-.fa-shopping-bag {
-	transform: translateX(3px);
+.joinus{
+    background-color:#000000;
+  
 }
-
-/* -------------------------navbar end-------------------------- */
-
-.right-main {
-	padding: 30px 50px;
-	position: relative;
-}
-
-/* -------------------------main-------------------------- */
-
-main {
-	flex: 1;
-}
-
-.main-top {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.search > input {
-	background-color: transparent;
-	border: none;
-	outline: none;
-	color: white;
-	height: 100%;
-	width: 90%;
-	font-family: "Urbanist", sans-serif;
-	font-weight: 400;
-}
-
-.search > input::placeholder {
-	font-weight: 600;
-}
-
-.search {
-	width: 30%;
-	min-width: 300px;
-	padding: 1em 1.5em;
-	background-color: #313237;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-radius: 50px;
-	color: rgba(255, 255, 255, 0.5);
-}
-
-.top {
-	width: 20%;
-	display: flex;
-	justify-content: space-between;
-	color: white;
-}
-
-.top i {
-	width: 40px;
-	height: 40px;
-	display: grid;
-	place-items: center;
-	border-radius: 50%;
-	position: relative;
-	cursor: pointer;
-}
-
-.top .fa-bars {
-	display: none;
-}
-
-.top i:hover {
-	background-color: rgba(255, 255, 255, 0.1);
-}
-
-header {
-	padding: 70px 30px 30px 30px;
-	border-radius: 30px;
-	border: 2px solid rgba(255, 255, 255, 0.1);
-	background-color: #313237;
-	background-image: radial-gradient(
-		ellipse at top,
-		#3a3c47,
-		rgba(0, 0, 0, 0.6)
-	);
-	position: relative;
-	margin-bottom: 30px;
-}
-
-.spiderman-img {
-	width: 400px;
-	position: absolute;
-	top: -40px;
-	right: -20px;
-}
-
-.spiderman-img img {
-	max-width: 100%;
-}
-
-.tag {
-	padding: 0.3em 0.75em;
-	background-color: #ff3d3d;
-	border-radius: 5px;
-	font-size: 0.8rem;
-	color: white;
-	width: max-content;
-	margin-bottom: 20px;
-}
-
-header h1 {
-	color: white;
-	width: 50%;
-	margin-bottom: 20px;
-}
-
-.purchase {
-	background-color: rgba(255, 255, 255, 0.1);
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	padding: 5px;
-	width: 200px;
-	justify-content: space-between;
-}
-
-.purchase h2 {
-	font-size: 0.8rem;
-	color: white;
-	padding: 0 10px;
-}
-
-.purchase button {
-	padding: 1em 2em;
-	border-radius: 10px;
-	border: none;
-	outline: none;
-	font-family: "Urbanist", sans-serif;
-	background-color: #3482e7;
-	color: white;
-	font-weight: 600;
-	cursor: pointer;
-	position: relative;
-	z-index: 2;
-}
-
-.purchase button::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background-color: #3482e7;
-	filter: blur(10px);
-	z-index: -1;
-	opacity: 0;
-	transition: opacity 0.2s linear;
-}
-
-.purchase button:hover::after {
-	opacity: 1;
-}
-
-.most-played {
-	max-width: 100%;
-	color: white;
-}
-
-.most-played h3 {
-	margin-bottom: 20px;
-}
-
-.cards {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 20px;
-}
-
-.game-image-container {
-	height: 150px;
-	width: 100%;
-	overflow: hidden;
-	border-radius: 20px;
-	margin-bottom: 10px;
-}
-
-.games-card img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	cursor: pointer;
-	transition: transform 0.2s linear;
-}
-.games-card img:hover {
-	transform: scale(1.05);
-}
-
-/* -------------------------------------main end-------------------------------------------- */
-
-.main-flex {
-	display: flex;
-	margin-top: 30px;
-}
-
-/* -----------------------------------------aside---------------------------------------------- */
-
-aside {
-	flex: 0.5;
-	margin-left: 30px;
-}
-
-.library {
-	clear: right;
-	color: white;
-	padding: 30px;
-	background-image: linear-gradient(to top, #1a1b1f 50%, #313237 90%);
-	border-radius: 30px;
-	border: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-.library-card {
-	margin-top: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.game-logo {
-	width: 50px;
-	height: 50px;
-	overflow: hidden;
-	border-radius: 50%;
-	margin-right: 20px;
-	cursor: pointer;
-}
-
-.game-logo img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.game-details {
-	flex: 0.9;
-}
-
-.library-card i {
-	cursor: pointer;
-	flex: 0.1;
-	color: rgba(255, 255, 255, 0.5);
-}
-
-.fa-check-circle {
-	color: #3482e7 !important;
-	font-size: 1.1rem;
-}
-
-.library hr {
-	border: none;
-	height: 1px;
-	background-color: rgba(255, 255, 255, 0.3);
-	width: 70%;
-	margin: 20px auto;
-}
-
-.offline,
-.online {
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-}
-
-.online {
-	background-color: rgb(23, 221, 23);
-}
-
-.offline {
-	background-color: #ff3d3d;
-}
-
-.attribution {
-	margin-top: 30px;
-	color: #1a1b1f;
-}
-
-.attribution a {
-	text-decoration: none;
-	color: inherit;
-}
-
-/* ------------------media query--------------------- */
-
-@media (max-width: 1200px) {
-	aside {
-		position: absolute;
-		inset: 0;
-		background-color: #1a1b1fbd;
-		z-index: 1000;
-		opacity: 0;
-		transition: opacity 0.2s linear;
-		pointer-events: none;
-	}
-	.library {
-		bottom: 20px;
-		position: absolute;
-		right: -50%;
-		transition: right 0.2s linear;
-	}
-
-	aside.active .library {
-		right: 20px;
-		pointer-events: all;
-	}
-
-	aside.active {
-		opacity: 1;
-	}
-	.top {
-		width: 30%;
-		z-index: 4000;
-	}
-	.top .fa-bars {
-		display: grid;
-	}
-}
-
-@media (max-width: 1000px) {
-	header {
-		padding: 30px 20px;
-	}
-	header h1 {
-		width: 70%;
-		position: relative;
-		z-index: 2;
-	}
-	.spiderman-img {
-		width: 300px;
-	}
-}
-@media (max-width: 768px) {
-	.search {
-		min-width: 0;
-		width: 50px;
-		height: 50px;
-		padding-left: 17px;
-		overflow: hidden;
-		cursor: pointer;
-		transition: width 0.2s linear;
-	}
-  .right-main{
-    padding:1rem;
-  }
-	.search.active {
-		width: 50%;
-	}
-	.top {
-		width: auto;
-    gap:0.5rem;
-	}
-	.main-flex {
-		height: 100%;
-	}
-	.cards {
-		display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-		overflow: auto;
-	}
-	.most-played {
-		height: 39%;
-		overflow: auto;
-	}
-
-	.most-played::-webkit-scrollbar {
-		display: none;
-	}
-	.games-card {
-		margin-bottom: 20px;
-	}
-}
-
-@media (max-width: 600px) {
-	.main-flex {
-		height: 80%;
-		overflow-y: auto;
-		overflow-x: hidden;
-	}
-	.spiderman-img {
-		top: 0;
-		right: -50px;
-	}
-	.container {
-		width: 90%;
-	}
-
-	.right-main {
-		padding: 30px 20px;
-	}
-
-	nav {
-		display: none;
-	}
-
-	.main-flex::-webkit-scrollbar {
-		display: none;
-	}
-	.most-played {
-		height: max-content;
-	}
-}
-  </style>
+</style>
 </head>
 <body>
-  
-<div class="container">
-			<nav>
-				<div class="logo">
-					<i class="fab fa-playstation"></i>
-				</div>
-				<ul>
-					<li class="active">
-						<i class="fas fa-home"></i>
-					</li>
-					<li>
-						<i class="fas fa-tv"></i>
-					</li>
-					<li>
-						<i class="fas fa-user-friends"></i>
-					</li>
-					<li>
-						<i class="fas fa-chart-pie"></i>
-					</li>
-					<li>
-						<i class="fas fa-shopping-bag"></i>
-					</li>
-				</ul>
-			</nav>
-			<div class="right-main">
-				<div class="main-top">
-					<div class="search">
-						<i class="fas fa-search"></i>
-						<input type="text" placeholder="Search..." />
-					</div>
-					<div class="top">
-						<i class="fas fa-bell"></i>
-						<i class="fas fa-shopping-cart"></i>
-						<i class="fas fa-user-circle"></i>
-						<i class="fas fa-bars" id="hamburger"></i>
-					</div>
-				</div>
-				<div class="main-flex">
-					<main>
-						<header>
-							<div class="tag">New</div>
-							<h1>Marvel's Spider-Man: Myles Morals</h1>
-							<div class="purchase">
-								<h2>$99.99</h2>
-								<button>Purchase</button>
-							</div>
-							<div class="spiderman-img">
-								<img
-									src="https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/D2APa7eBrNew2zVipbfI0QXt.png"
-									alt="spiderman"
-									draggable="false"
-								/>
-							</div>
-						</header>
-						<div class="most-played">
-							<h3>Trending Games</h3>
-							<div class="cards">
-								<div class="games-card">
-									<div class="game-image-container">
-										<img
-											src="https://elintranews.com/wp-content/uploads/2020/11/Assassins-Creed-Valhalla.jpg"
-											alt="ac-valhalla"
-										/>
-									</div>
+<ul>
+  <div class="logo">The Gaming Store </div>
+  <div class="button">
+  <a href="">Home</a>
+  <a href="https://www.youtube.com/channel/UCz0eRI3XiQ3gzPyuc416AyQ">About Us</a>
+  <a href="https://alter.ru/besplatnaya-psikhologicheskaya-pomosch">Help</a>
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click</a>
+ </div>   
+</ul>
+<div> </div>
 
-									<h4>Assassins Creed Valhalla</h4>
-									<p>$120.50</p>
-								</div>
-								<div class="games-card">
-									<div class="game-image-container">
-										<img
-											src="https://nerdreactor.com/wp-content/uploads/2019/08/Cyberpunk-2077.jpg"
-											alt="cyberpunk"
-										/>
-									</div>
-									<h4>Cyberpunk 2077</h4>
-									<p>$150.50</p>
-								</div>
-								<div class="games-card">
-									<div class="game-image-container">
-										<img
-											src="https://pixelz.cc/wp-content/uploads/2017/11/far-cry-5-artwork-joseph-seed-uhd-8k-wallpaper.jpg"
-											alt="Farcry5"
-										/>
-									</div>
-									<h4>Far Cry 5</h4>
-									<p>$100.99
-								</div>
-							</div>
-						</div>
-					</main>
-					
+<div class="slideshow">
+  
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.ytimg.com/vi/nb_xbLaSq4I/maxresdefault.jpg" alt="Cheap Gaming Laptop">
+      <center>
+       
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="d-block w-100 slideimg" alt="controllers">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1132&q=80" class="d-block w-100 slideimg" alt="cheap gaming keyboards">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+  
+  <h1 class="gl"> Игры</h1>
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="col">
+      <div class="card" style="width: 12rem;">
+  <img src="https://images.ctfassets.net/wn7ipiv9ue5v/6ZSV0CNlsw4xhNcCNK4haj/82d0f54cf5010ab9f05a5e5558d3b4f0/RDR2_HeroSquare_1080x1080.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">RDR 2</p>
+    <p class="price-gl">Price: 0$ </p>
+    <a href="" class="btn btn-danger"> Dowloand launcher </a>
+  </div>
+</div>
+      
+      </div>
+    
+         <div class="col">
+      <div class="card" style="width: 12rem;">
+  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Cyberpunk_2077_box_art.jpg/220px-Cyberpunk_2077_box_art.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Cyber Punk 2077</p>
+    <p class="price-gl">Price: 0$ </p>
+      <a href="" class="btn btn-danger"> Dowloand launcher </a>
+  </div>
+</div>
+      
+      </div>
+    
+         <div class="col">
+      <div class="card short" style="width: 12rem;">
+  <img src="https://upload.wikimedia.org/wikipedia/en/6/6d/Dying_Light_2_cover_art.jpg"class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Dying light 2</p>
+    <p class="price-gl">Price: 0$ </p>
+     <a href="" class="btn btn-danger"> Dowloand launcher </a>
+  </div>
+        
+</div>
+           
+           
+           
+           
+      
+      </div>
+    
+    
+    
+       <div class="col">
+      <div class="card" style="width: 12rem;">
+  <img src="https://assets-prd.ignimgs.com/2021/09/09/god-of-war-ragnarok-button-1631231879154.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">God of war Ragnarok</p>
+    <p class="price-gl">Price: 0$ </p>
+      <a href="" class="btn btn-danger"> Dowloand launcher </a>
+  </div>
+</div>
+  </div>
+  
+    </div>
+    
+    
+    
+    
+    
+      
+  <h1 class="gm"> Ексклюзивы только у нас  </h1>
+  
+  <div class="container">
+  <div class="row">
+    
+    <div class="col">
+      <div class="card" style="width: 12rem;">
+  <img src="https://cyberofsport.com/wp-content/uploads/2022/12/GTA-6-850x560-1.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">GTA 6</p>
+    <p class="price-gl">Price: 0$ </p>
+      <a href="" class="btn btn-danger"> Dowloand launcher </a>
+  </div>
+</div>
+      
+      </div>
+    
+         <div class="col">
+      <div class="card" style="width: 12rem;">
+  <img src="https://upload.wikimedia.org/wikipedia/ru/5/5c/S.T.A.L.K.E.R._2_Logo.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Stalker 2</p>
+    <p class="price-gl"> Price: 0$ </p>
+      <a href="" class="btn btn-danger"> Dowloand launcher </a>
+  </div>
+</div>
+      
+      </div>
+    
+         <div class="col">
+      <div class="card short" style="width: 12rem;">
+  <img src="https://s3.gaming-cdn.com/images/products/6962/orig-fallback-v1/the-witcher-4-pc-game-cover.jpg?v=1650614233" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Witcher 4</p>
+    <p class="price-gl">Price: 0$ </p>
+      <a href="" class="btn btn-danger"> Dowloand launcher </a>
+  </div>
+        
+</div>
+           
+           
+           
+           
+      
+      </div>
+    
+    
+    
+       <div class="col">
+      <div class="card" style="width: 12rem;">
+  <img src= "https://m.media-amazon.com/images/I/51Iy3CraT3L._UXNaN_FMjpg_QL85_.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Minecraft 2</p>
+    <p class="price-gl">Price: 0$ </p>
+     <a href="" class="btn btn-danger"> Dowloand launcher </a>
+  </div>
+</div>
+  </div>
+  
+    </div>
+    </div>
+    
+   <div class="jumbotron joinus">
+     
+     
+     
+    </div>
+  
+</body>
+</html>
